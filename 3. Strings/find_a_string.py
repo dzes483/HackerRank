@@ -18,9 +18,3 @@ if __name__ == '__main__':
 
     count = count_substring(string, sub_string)
     print(count)
-
-
-string = 'ABCDCDC'
-
-chunk = string[0:3]
-print(chunk)
