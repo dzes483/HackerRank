@@ -7,10 +7,8 @@ profit = 0
 counter = Counter(shoe_sizes)
 
 for i in range(num_customers):
-    size_and_price = [int(i) for i in (input().split())]
-    size = size_and_price[0]
-    price = size_and_price[1]
+    size, price = [int(i) for i in (input().split())]
     if size in counter and counter[size] > 0:
-        profit = price + profit
+        profit += price
         counter[size] -= 1
 print(profit)
