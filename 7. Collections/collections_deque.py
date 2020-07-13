@@ -9,4 +9,4 @@ for num in range(num_ops):
         getattr(d, args[0])()
     else:
         getattr(d, args[0])(int(args[1]))
-print(i for i in d)
+print(*[i for i in d])
