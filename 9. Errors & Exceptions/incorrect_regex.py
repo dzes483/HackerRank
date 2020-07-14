@@ -1,6 +1,7 @@
 import re
 
 num_test_cases = int(input())
+
 for num in range(num_test_cases):
     s = input()
     try:
