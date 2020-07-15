@@ -5,6 +5,5 @@ subject_scores = []
 for num in range(num_subjects):
     subject_scores.append([float(i) for i in (input().split())])
 
-z = zip(*subject_scores)
-for i in z:
+for i in zip(*subject_scores):
     print(sum(i)/num_subjects)
