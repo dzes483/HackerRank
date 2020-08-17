@@ -1,15 +1,8 @@
-# regex_pattern = r"^[C]?[M]{0,3}[DLV]?[XI]{0,3}[C]{0,3}[DLV]?[XI]{0,3}[DLV]?"
+import re
 
-#999-3999
-thousand = r"[C]?[M]{0,3}"
-#99-999
-hundred = r"[DX]?[C]{0,3}"
-#9-98
-ten = r"[ILD]?[X]{0,3}"
-#1-8
-one = r"[V]?[I]{0,3}[V]?"
+regex_pattern = re.compile(r'^((M{0,3})?(CM|D|CD)?(C{0,3})?(XC|L|XL)?(X{0,3})?(IX|V|IV)?(I{0,3})?)$')
 
-regex_pattern = thousand + hundred + ten + one
+
 
 import re
-print(str(bool(re.fullmatch(regex_pattern, input()))))
+print(str(bool(re.match(regex_pattern, input()))))
