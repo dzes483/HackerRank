@@ -18,7 +18,6 @@ def cutTheSticks(arr):
             shortest = min(arr)
         except ValueError:
             break
-    print(f'sticks:{sticks}')
     return sticks[:-1]
 
 if __name__ == '__main__':
